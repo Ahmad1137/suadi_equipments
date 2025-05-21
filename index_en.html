@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Home - Bilingual Website</title>
+    <script type="application/ld+json">
+    {         
+      "@context": "https://schema.org/",         
+      "@type": "Organization",         
+      "@id": "#Organization",         
+      "url": "https://www.saudi-equipment.com/",         
+      "legalName": "Saudi Equipment",         
+      "name": "سوق معدات السعودية",         
+      "description": "Heavy Equipment Rental, Sale in Saudi Arabia, Jeddah, Riyadh",         
+      "image": "https://www.saudi-equipment.com/images/forklift-rental-saudi-jeddah-riyadh.png",         
+      "logo": "https://www.saudi-equipment.com/images/saudi-equipment-website-logo.png",         
+      "telephone": "920002332",         
+      "email": "info@saudi-equipment.com",         
+      "sameAs": [             
+        "https://www.facebook.com/people/Saudi-Equipment-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D8%A7%D8%AA/100064623434321/#",           
+        "https://x.com/saudi_equipment"       
+      ] 
+  } 
+  </script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+      <link rel="stylesheet" href="./css/index.css">
+      <link rel="stylesheet" href="./css/equipment_slider.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+        
+</head>
+
+<body class="bg-gray-100">  
+     
+        <div id="download-app-popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg p-6 max-w-md w-96 mx-4 relative">
+                <button id="close-popup" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <h2 class="text-2xl font-bold text-[#FCB034] text-center mb-4" data-key="Download_App_Popup_Title">Download Our App</h2>
+                <p class="text-gray-700 text-center mb-6" data-key="Download_App_Popup_Description">Get the best experience by downloading our mobile app from the App Store or Google Play.</p>
+                <div class="mt-3 items-center space-y-4 justify-center w-fit mx-auto gap-3 sm:gap-4">
+                    <a href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener noreferrer"></a>
+                    <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
+                        <img src="./images/appleicon.png" alt="Apple icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
+                        <div class="text-left">
+                            <p class="text-[10px] sm:text-xs uppercase">Download on</p>
+                            <p class="text-xs sm:text-sm font-bold leading-tight">App Store</p>
+                        </div>
+                    </button>
+                    </a>
+                    <a href="https://apps.apple.com/app/idXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                    <button class="bg-black text-white rounded-lg mt-4 px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
+                        <img src="./images/playstoreicon.png" alt="Google Play icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
+                        <div class="text-left">
+                            <p class="text-[10px] sm:text-xs uppercase">Get it on</p>
+                            <p class="text-xs sm:text-sm font-bold leading-tight">Google Play</p>
+                        </div>
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
+    
+    
+    <!-- Header Placeholder -->
+        <nav class="bg-[#FFFAF3] text-white p-4">
+            <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold">
+                <img src="./images/logo-removebg-preview.png" class="w-24 max-[350px]:w-16" alt="Construction Saudi Logo">
+            </a>
+            <ul class="flex flex-col items-end space-y-2" dir="ltr">            
+                <div class="relative flex px-3 py-1 border-solid border-2 items-center pt-1 border-black max-[350px]:px-2 max-[350px]:py-0.5">
+                    <span>
+                    <img class="w-7 max-[350px]:w-5" src="./images/tabler_language.svg" alt="Language Icon">
+                    </span>
+                    <button 
+                    class="language-btn text-[#FCB034] px-1 text-sm rounded-md transition-colors duration-200 max-[350px]:text-xs" 
+                    data-lang="en" 
+                    onclick="toggleLanguage('en')"
+                    >
+                    English
+                    </button>
+                    <span class="text-gray-700">/</span>
+                    <button 
+                    class="language-btn px-1 text-sm rounded-md transition-colors duration-200 text-gray-700 max-[350px]:text-xs" 
+                    data-lang="ar" 
+                    onclick="toggleLanguage('ar')"
+                    >
+                    العربية
+                    </button>
+                </div>
+                
+                <div class="flex space-x-2 md:space-x-4">
+                <button class="px-3 py-3 bg-[#565F5B] text-white rounded-md text-xs font-medium md:px-4 md:py-2 md:text-base max-[350px]:px-2 max-[350px]:py-2 max-[350px]:text-[10px]">
+                    Sign In / Sign Up
+                </button>
+                <button class="px-3 py-3 bg-[#FCB034] text-white rounded-md text-xs font-medium md:px-4 md:py-2 md:text-base max-[350px]:px-2 max-[350px]:py-2 max-[350px]:text-[10px]">
+                    Post a free Ad
+                </button>
+                </div>
+            </ul>
+            </div>
+        </nav>
+
+       <section class="mx-auto bg-white">     
+
+      <!-- hero section -->
+        <div class="relative bg-[#FFFAF3] py-10 md:py-14 lg:py-16 xl:py-16">
+            <div class="container mx-auto">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center px-5 lg:px-0">
+                    <div class="text-center lg:text-start mb-8 lg:mb-0">
+                        <h1 class="mt-4 text-2xl font-bold text-[#FCB034] sm:text-3xl lg:text-4xl xl:text-5xl/normal">Saudi Arabia Equipment Market 2025</h1>
+                        <p class="mt-3 text-base text-black text-lg lg:text-3xl font-bold">Sell / Rental / Demand</p>
+                        <p class="text-sm lg:text-lg text-black mt-1 font-semibold">Without commission</p>
+                        <p class="mt-6 text-sm lg:text-lg text-black sm:mt-8">Download Heavy Equipment Mobile Application</p>
+                       <div class="mt-3 flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
+                            <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition dir-auto">
+                                <img src="./images/appleicon.png" alt="Apple icon" class="h-6 sm:h-8 order-0 rtl:order-1">
+                                <div class="px-2 sm:px-3 text-start">
+                                    <p class="text-[10px] sm:text-xs uppercase">Download on</p>
+                                    <p class="text-xs sm:text-sm font-bold leading-tight">App Store</p>
+                                </div>
+                            </button>
+                            
+                            <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition dir-auto">
+                                <img src="./images/playstoreicon.png" alt="Google Play icon" class="h-6 sm:h-8 order-0 rtl:order-1">
+                                <div class="px-2 sm:px-3 text-start">
+                                    <p class="text-[10px] sm:text-xs uppercase">Get it on</p>
+                                    <p class="text-xs sm:text-sm font-bold leading-tight">Google Play</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./images/homehero_img.png" alt="Mobile App Mockups" class="mx-auto max-w-full md:max-w-md rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+      
+      <div class="w-full relative container mx-auto bg-white py-10 px-5 lg:px-0">
+          <h2 class="text-sm lg:text-lg font-semibold text-[#FCB034] tracking-wide mb-2">Categories</h2>
+          <p class="text-2xl lg:text-3xl font-bold text-black mb-14">Equipment by Categories</p>
+          <div class="swiper max-w-6xl multiple-slide-carousel swiper-container relative container mx-auto categories-slider">                
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="rounded-2xl h-fit w-fit justify-center items-center text-center">
+                          <div class="bg-[#fcb034] rounded-full w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52 flex justify-center items-center">
+                              <img class="w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52" src="./images/tractor.png" alt="Category 01">
+                          </div>
+                          <span class="block text-lg font-bold text-black mt-2 max-[360px]:text-sm">category 01</span>
+                      </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                      <div class="rounded-2xl h-fit w-fit text-center justify-center items-center">
+                          <div class="bg-[#fcb034] rounded-full w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52 flex justify-center items-center">
+                              <img class="w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52" src="./images/tractor.png" alt="Category 02">
+                          </div>
+                          <span class="block text-lg font-bold text-black mt-2 max-[360px]:text-sm">category 02</span>
+                      </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                      <div class="rounded-2xl h-fit w-fit text-center justify-center items-center">
+                          <div class="bg-[#fcb034] rounded-full w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52 flex justify-center items-center">
+                              <img class="w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52" src="./images/tractor.png" alt="Category 03">
+                          </div>
+                          <span class="block text-lg font-bold text-black mt-2 max-[360px]:text-sm">category 03</span>
+                      </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                      <div class="rounded-2xl h-fit w-fit text-center justify-center items-center">
+                          <div class="bg-[#fcb034] rounded-full w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52 flex justify-center items-center">
+                              <img class="w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52" src="./images/tractor.png" alt="Category 04">
+                          </div>
+                          <span class="block text-lg font-bold text-black mt-2 max-[360px]:text-sm">Category 04</span>
+                      </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                      <div class="rounded-2xl h-fit w-fit text-center justify-center items-center">
+                          <div class="bg-[#fcb034] rounded-full w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52 flex justify-center items-center">
+                              <img class="w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52" src="./images/tractor.png" alt="Category 05">
+                          </div>
+                          <span class="block text-lg font-bold text-black mt-2 max-[360px]:text-sm">Category 05</span>
+                      </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                      <div class="rounded-2xl h-fit w-fit text-center justify-center items-center">
+                          <div class="bg-[#fcb034] rounded-full w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52 flex justify-center items-center">
+                              <img class="w-40 md:w-52 max-[360px]:w-32 max-[360px]:h-32 h-40 md:h-52" src="./images/tractor.png" alt="Category 06">
+                          </div>
+                          <span class="block text-lg font-bold text-black mt-2 max-[360px]:text-sm">Category 06</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Navigation Buttons -->
+          <button id="slider-button-left-categories" class="swiper-button-prev swiper-button-prev-categories group absolute top-2/3 -translate-y-1/2 left-0 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full p-5" data-carousel-prev>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" fill="#FFFFFF"/></svg>
+          </button>
+          <button id="slider-button-right-categories" class="swiper-button-next swiper-button-next-categories group absolute top-2/3 -translate-y-1/2 right-0 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full" data-carousel-next>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" fill="#FFFFFF"/></svg>
+          </button>
+      </div>
+
+         <!-- Top Heavy Equipment Cities slider section -->
+       <div class="w-full relative container mx-auto bg-white py-10 px-5 lg:px-0">
+          <h2 class="text-sm lg:text-lg font-semibold text-[#FCB034] tracking-wide mb-2">Cities</h2>
+          <p class="text-2xl lg:text-3xl font-bold text-black mb-14">Top Heavy Equipment Cities</p>
+          <div class="swiper max-w-6xl multiple-slide-carousel swiper-container relative container mx-auto cities-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="rounded-2xl justify-center items-center text-center relative">
+                        <div class="relative rounded-2xl">
+                            <img class=" rounded-lg w-[-webkit-fill-available] lg:h-60 h-32" src="./images/jedda-img.jpg" alt="Jeddah">
+                            <div class="rounded-lg absolute inset-0 bg-[#FCB034] opacity-50"></div>
+                            <span class="absolute inset-0 flex items-center justify-center text-lg lg:text-4xl font-bold text-white">Jeddah</span>
+                        </div>
+                        <span class="block text-lg font-bold text-black mt-2">Jeddah</span>
+                    </div>
+                </div>
+                  <div class="swiper-slide w-fit">
+                      <div class="rounded-2xl text-center justify-center items-center">
+                          <div class="relative rounded-2xl">
+                            <img class="rounded-lg w-[-webkit-fill-available] lg:h-60 h-32" src="./images/jedda-img.jpg" alt="Riyadh">
+                            <div class="rounded-lg absolute inset-0 bg-[#FCB034] opacity-50"></div>
+                            <span class="absolute inset-0 flex items-center justify-center text-lg lg:text-4xl font-bold text-white">Riyadh</span>
+                        </div>
+                        <span class="block text-lg font-bold text-black mt-2">Riyadh</span>
+                      </div>
+                  </div>
+                  <div class="swiper-slide w-fit">
+                    <div class="rounded-2xl text-center justify-center items-center">
+                        <div class="relative rounded-2xl">
+                          <img class="rounded-lg w-[-webkit-fill-available] lg:h-60 h-32" src="./images/jedda-img.jpg" alt="Riyadh">
+                          <div class="rounded-lg absolute inset-0 bg-[#FCB034] opacity-50"></div>
+                          <span class="absolute inset-0 flex items-center justify-center text-lg lg:text-4xl font-bold text-white">Dammam</span>
+                      </div>
+                      <span class="block text-lg font-bold text-black mt-2">Dammam</span>
+                    </div>
+                </div>
+                  <div class="swiper-slide w-fit">
+                    <div class="rounded-2xl text-center justify-center items-center">
+                        <div class="relative rounded-2xl">
+                          <img class="rounded-lg w-[-webkit-fill-available] lg:h-60 h-32" src="./images/jedda-img.jpg" alt="Riyadh">
+                          <div class="rounded-lgabsolute inset-0 bg-[#FCB034] opacity-50"></div>
+                          <span class="absolute inset-0 flex items-center justify-center text-lg lg:text-4xl font-bold text-white">Mecca</span>
+                      </div>
+                      <span class="block text-lg font-bold text-black mt-2">Mecca</span>
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="rounded-2xl text-center justify-center items-center">
+                        <div class="relative rounded-2xl">
+                          <img class="rounded-lg w-[-webkit-fill-available] lg:h-60 h-32" src="./images/jedda-img.jpg" alt="Riyadh">
+                          <div class="rounded-lg absolute inset-0 bg-[#FCB034] opacity-50"></div>
+                          <span class="absolute inset-0 flex items-center justify-center text-lg lg:text-4xl font-bold text-white">Riyadh</span>
+                      </div>
+                      <span class="block text-lg font-bold text-black mt-2">Riyadh</span>
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="rounded-2xl text-center justify-center items-center">
+                        <div class="relative rounded-2xl">
+                          <img class="rounded-lg w-[-webkit-fill-available] lg:h-60 h-32" src="./images/jedda-img.jpg" alt="Riyadh">
+                          <div class="rounded-lg absolute inset-0 bg-[#FCB034] opacity-50"></div>
+                          <span class="absolute inset-0 flex items-center justify-center text-lg lg:text-4xl font-bold text-white">Mecca</span>
+                      </div>
+                      <span class="block text-lg font-bold text-black mt-2">Mecca</span>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <!-- Navigation Buttons -->
+          <button id="slider-button-left-cities" class="swiper-button-prev swiper-button-prev-cities group absolute top-2/3 -translate-y-1/2 left-0 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full p-5" data-carousel-prev>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" fill="#FFFFFF"/></svg>
+          </button>
+          <button id="slider-button-right-cities" class="swiper-button-next swiper-button-next-cities group absolute top-2/3 -translate-y-1/2 right-0 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full" data-carousel-next>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" fill="#FFFFFF"/></svg>
+          </button>
+            </div>
+            <div class="text-center">
+                <button class="bg-[#FCB034] flex align-center items-center mx-auto w-fit text-white font-semibold py-2 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <span>View More</span>
+                    <img class="w-4 ml-3" src="./images/arrow-right.svg" alt="">
+                </button>
+            </div>
+
+
+
+        <!-- equipment for sale section -->
+       <div class="bg-[#FFFAF3] lg:pb-16 pb-5 py-5 md:py-5 lg:mt-16 mt-12">
+          <div class="relative mx-auto">
+              <img class="absolute top-0 left-0 w-36 md:w-40 h-auto z-10" src="./images/HeavyEquipmentSale_samll.png" alt="">
+              <div class="container py-8 md:py-9 mx-auto mb-12 md:mb-8 flex flex-col lg:flex-row items-center">
+                  <div class="w-full lg:w-2/3 lg:pr-24 px-5 lg:px-0 text-center lg:text-start">
+                      <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Equipment For Sale</h2>
+                      <p class="text-2xl md:text-3xl font-bold text-black">Heavy Equipment Sale</p>
+                      <p class="mt-2 text-base md:text-xl text-black">Saudi Equipment is the leading platform in Saudi Arabia for buying, selling, and renting heavy equipment. We provide a trusted and secure environment that brings together buyers, sellers, investors, suppliers, contractors, and dealers in one place. You can post local classified ads for free and find the best deals from across the Kingdom. We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+                  </div>
+                  <div class="w-full lg:w-1/3 mt-6 lg:mt-0 px-5 lg:px-0">
+                      <div class="hero-image-container">
+                          <img class="max-w-full h-auto" src="./images/Equipment for Rent.png" alt="Heavy Equipment Sale Hero">
+                      </div>
+                  </div>
+              </div>
+              <div class="container mx-auto md:mb-12 text-center lg:text-start px-5 lg:px-0">
+                  <h2 class="text-lg md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Heavy Equipment Sale</h2>
+                  <p class="text-2xl md:text-3xl font-bold text-black">Heavy Equipment for Sale in Saudi Arabia 2025 - New or Used</p>
+                  <p class="mt-2 text-base md:text-xl text-black">We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+              </div>
+              <img class="absolute top-[45%] lg:top-[40%] right-0 w-32 mt-10 md:w-36 h-auto z-10" src="./images/HeavyEquipmentSale_samll2.png" alt="">
+              <div class="swiper max-w-6xl multiple-slide-carousel swiper-container relative container mx-auto px-5 lg:px-0 equipment-sale-slider">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide flex justify-center">
+                          <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                              <img id="equipment-01-image" class="w-full h-auto md:h-52 object-cover" src="./images/hv2.png" alt="Excavator">
+                              <span class="block text-sm font-normal text-black mt-2">Sale</span>
+                              <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Excavator</span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide flex justify-center">
+                          <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                              <img id="equipment-02-image" class="w-full h-auto md:h-52 object-cover" src="./images/hv3.png" alt="Crane">
+                              <span class="block text-sm font-normal text-black mt-2">Sale</span>
+                              <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Crane</span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide flex justify-center">
+                          <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                              <img id="equipment-03-image" class="w-full h-auto md:h-52 object-cover" src="./images/hv4.png" alt="Loader">
+                              <span class="block text-sm font-normal text-black mt-2">Sale</span>
+                              <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Loader</span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide flex justify-center">
+                          <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                              <img id="equipment-04-image" class="w-full h-auto md:h-52 object-cover" src="./images/hv1.png" alt="Truck">
+                              <span class="block text-sm font-normal text-black mt-2">Sale</span>
+                              <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Truck</span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide flex justify-center">
+                          <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                              <img id="equipment-05-image" class="w-full h-auto md:h-52 object-cover" src="./images/hv6.png" alt="Generator">
+                              <span class="block text-sm font-normal text-black mt-2">Sale</span>
+                              <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Generator</span>
+                          </div>
+                      </div>
+                      <div class="swiper-slide flex justify-center">
+                          <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                              <img id="equipment-06-image" class="w-full h-auto md:h-52 object-cover" src="./images/hv7.png" alt="Bulldozer">
+                              <span class="block text-sm font-normal text-black mt-2">Sale</span>
+                              <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Bulldozer</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Navigation Buttons -->
+              <div class="container">
+                  <button id="slider-button-left-equipment-sale" class="swiper-button-prev swiper-button-prev-equipment-sale group absolute top-[82.5%] lg:top-[77%] lg:left-12 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full p-5" data-carousel-prev>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" fill="#FFFFFF"/></svg>
+                  </button>
+                  <button id="slider-button-right-equipment-sale" class="swiper-button-next swiper-button-next-equipment-sale group absolute top-[82.5%] lg:top-[77%] lg:right-12 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full" data-carousel-next>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" fill="#FFFFFF"/></svg>
+                  </button>
+              </div>                        
+              <div class="mt-8 text-center">
+                  <button class="bg-[#FCB034] flex align-center items-center mx-auto w-fit text-white font-semibold py-2 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                      <span>View More</span>
+                      <img class="w-4 ml-3" src="./images/arrow-right.svg" alt="">
+                  </button>
+              </div>
+              <img class="absolute bottom-0 left-0 w-32 mt-10 md:w-36 h-auto z-10" src="./images/HeavyEquipmentSale_samll3.png" alt="">
+          </div>
+      </div>
+
+
+          <!-- equipment for rental section -->
+      <div class="bg-[#FFFAF3] py-5 lg:pb-16 pb-5 md:py-5 lg:mt-16 mt-12">
+        <div class="relative mx-auto">
+            <img class="absolute top-0 left-0 w-36 md:w-40 h-auto z-10" src="./images/HeavyEquipmentSale_samll.png" alt="">
+            <div class="container py-8 md:py-9 mx-auto mb-12 md:mb-8 flex flex-col lg:flex-row items-center">
+                <div class="w-full lg:w-2/3 lg:pr-24 px-5 lg:px-0 text-center lg:text-start">
+                    <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Equipment For Rent</h2>
+                    <p class="text-2xl md:text-3xl/normal font-bold text-black">Heavy Equipment Rental</p>
+                    <p class="mt-2 text-base md:text-xl text-black">Saudi Equipment is the leading platform in Saudi Arabia for buying, selling, and renting heavy equipment. We provide a trusted and secure environment that brings together buyers, sellers, investors, suppliers, contractors, and dealers in one place. You can post local classified ads for free and find the best deals from across the Kingdom. We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+                        
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/3 mt-6 lg:mt-0 px-5 lg:px-0">
+                    <div class="hero-image-container">
+                        <img class="max-w-full h-auto" src="./images/Equipment for Rent.png" alt="Heavy Equipment Rental Hero">
+                    </div>
+                </div>
+            </div>
+            <div class="container mx-auto md:mb-12 text-center lg:text-start px-5 lg:px-0">
+                <h2 class="text-lg md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Heavy Equipment Rental</h2>
+                <p class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Heavy Equipment for Rent in Saudi Arabia 2025 - New or Used</p>
+                <p class="mt-2 text-base md:text-xl text-black">We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+            </div>
+            <img class="absolute top-[45%] lg:top-[40%] right-0 w-32 mt-10 md:w-36 h-auto z-10" src="./images/HeavyEquipmentSale_samll2.png" alt="">
+            <div class="swiper max-w-6xl multiple-slide-carousel swiper-container relative container mx-auto px-4 lg:px-0 equipment-rental-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                            <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr6.png" alt="Excavator">
+                            <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                            <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Excavator</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                            <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr1.png" alt="Crane">
+                            <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                            <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Crane</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                            <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr2.png" alt="Loader">
+                            <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                            <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Loader</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                            <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr3.png" alt="Truck">
+                            <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                            <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Truck</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                            <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr4.png" alt="Generator">
+                            <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                            <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Generator</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex justify-center">
+                        <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                            <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr5.png" alt="Bulldozer">
+                            <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                            <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Bulldozer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="container">
+                <button id="slider-button-left-equipment-rental" class="swiper-button-prev swiper-button-prev-equipment-rental group absolute top-[82.5%] lg:top-[77%] lg:left-12 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full p-5" data-carousel-prev>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" fill="#FFFFFF"/></svg>
+                </button>
+                <button id="slider-button-right-equipment-rental" class="swiper-button-next swiper-button-next-equipment-rental group absolute top-[82.5%] lg:top-[77%] lg:right-12 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full" data-carousel-next>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" fill="#FFFFFF"/></svg>
+                </button>
+            </div>                            
+            <div class="mt-8 text-center">
+                <button class="bg-[#FCB034] flex align-center items-center mx-auto w-fit text-white font-semibold py-2 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <span>View More</span>
+                    <img class="w-4 ml-3" src="./images/arrow-right.svg" alt="">
+                </button>
+            </div>
+            <img class="absolute bottom-0 left-0 w-32 mt-10 md:w-36 h-auto z-10" src="./images/HeavyEquipmentSale_samll3.png" alt="">
+        </div>
+    </div>
+        
+
+         <!-- Heavy Equipment For Request-->
+          <div class="bg-[#FFFAF3] py-5 lg:pb-16 pb-5 md:py-5 lg:mt-16 mt-12">
+              <div class="relative mx-auto">
+                  <img class="absolute top-0 left-0 w-36 md:w-40 h-auto z-10" src="./images/Heavy equipment for Request_small1.png" alt="">
+                  <div class="container py-8 md:py-9 mx-auto mb-12 md:mb-8 flex flex-col lg:flex-row items-center">
+                      <div class="w-full lg:w-2/3 lg:pr-24 px-5 lg:px-0 text1 text-center lg:text-start">
+                          <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Equipment For Request</h2>
+                          <p class="text-2xl md:text-3xl font-bold text-black">Heavy Equipment For Request</p>
+                          <p class="mt-2 text-base md:text-xl text-black">Saudi Equipment is the leading platform in Saudi Arabia for buying, selling, and renting heavy equipment. We provide a trusted and secure environment that brings together buyers, sellers, investors, suppliers, contractors, and dealers in one place. You can post local classified ads for free and find the best deals from across the Kingdom. We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+                      </div>
+                      <div class="w-full lg:w-1/3 mt-6 lg:mt-0 px-5 lg:px-0">
+                          <div class="hero-image-container">
+                              <img class="max-w-full h-auto" src="./images/Equipment for Rent.png" alt="Heavy Equipment Request Hero">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="container mx-auto md:mb-12 text-center lg:text-start px-5 lg:px-0">
+                      <h2 class="text-lg md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Heavy equipment for Request</h2>
+                      <p class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Heavy Equipment Rental or Purchase Request in Saudi Arabia 2025</p>
+                      <p class="mt-2 text-base md:text-xl text-black">We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+                  </div>
+                  <img class="absolute top-[45%] lg:top-[40%] right-0 w-32 mt-10 md:w-36 h-auto z-10 opacity-25" src="./images/Heavy equipment for Request_small2.png" alt="">
+                  <div class="swiper max-w-6xl multiple-slide-carousel swiper-container relative container mx-auto px-4 lg:px-0 equipment-request-slider">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide flex justify-center">
+                              <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                                  <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr6.png" alt="Excavator">
+                                  <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                                  <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Excavator</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide flex justify-center">
+                              <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                                  <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr1.png" alt="Crane">
+                                  <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                                  <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Crane</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide flex justify-center">
+                              <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                                  <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr2.png" alt="Loader">
+                                  <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                                  <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Loader</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide flex justify-center">
+                              <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                                  <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr3.png" alt="Truck">
+                                  <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                                  <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Truck</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide flex justify-center">
+                              <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                                  <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr4.png" alt="Generator">
+                                  <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                                  <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Generator</span>
+                              </div>
+                          </div>
+                          <div class="swiper-slide flex justify-center">
+                              <div class="rounded-xl bg-white py-3 px-2 w-64 md:w-60">
+                                  <img class="w-full h-auto md:h-52 object-cover" src="./images/hvr5.png" alt="Bulldozer">
+                                  <span class="block text-sm font-normal text-black mt-2">Rent</span>
+                                  <span class="block text-base md:text-md font-bold text-[#FCB034] mt-1">Bulldozer</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Navigation Buttons -->
+                  <div class="container">
+                      <button id="slider-button-left-equipment-request" class="swiper-button-prev swiper-button-prev-equipment-request group absolute top-[82.5%] lg:top-[77%] lg:left-12 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full p-5" data-carousel-prev>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z" fill="#FFFFFF"/></svg>
+                      </button>
+                      <button id="slider-button-right-equipment-request" class="swiper-button-next swiper-button-next-equipment-request group absolute top-[82.5%] lg:top-[77%] lg:right-12 !p-2 flex bg-[#fcb034] justify-center items-center border border-solid text-white !w-12 !h-12 transition-all duration-500 rounded-full" data-carousel-next>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z" fill="#FFFFFF"/></svg>
+                      </button>
+                  </div>                            
+                  <div class="mt-8 text-center">
+                    <button class="bg-[#FCB034] flex align-center items-center mx-auto w-fit text-white font-semibold py-2 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <span>View More</span>
+                        <img class="w-4 ml-3" src="./images/arrow-right.svg" alt="">
+                    </button>
+                </div>
+                  <img class="absolute bottom-0 left-0 w-32 mt-10 md:w-36 h-auto z-10" src="./images/Heavy equipment for Request_small3.png" alt="">
+              </div>
+          </div>
+
+
+        <!-- call to action Post ads for free Sale and rent without COMMISION -->
+        <div class="bg-[#FEECCE] py-8 lg:py-16 mt-5 lg:mt-20">
+            <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div id="post-ads-title" class="text-2xl md:text-3xl lg:text-5xl/[58px] font-bold text-black text-center lg:text-left">
+                    <span>Post Ads For Free</span><br>
+                    <span class="text-xl md:text-3xl lg:text-4xl/[48px]">Sale and Rent</span><br>
+                    <span class="text-base md:text-2xl lg:text-3xl/[30px]">Without Commission</span>
+                </div>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full lg:w-auto justify-center lg:max-w-xl max-w-auto">
+                    <a href="#" class="bg-[#FCB034] text-white text-base lg:ml-4 ml-0 font-bold py-5 lg:px-14 px-4 rounded-lg flex items-center justify-between w-full sm:w-auto pt-10">
+                        <span class="lg:text-xl text-xl">Rental My Equipment</span>
+                        <img src="./images/toprightarrow.svg" class="w-4 ml-4 sm:ml-8" alt="">
+                    </a>
+                    <a href="#" class="bg-[#000000] text-white text-base font-bold py-5 lg:px-14 px-4 rounded-lg flex items-center justify-between w-full sm:w-auto pt-10">
+                        <span class="lg:text-xl text-xl">Sell My Equipment</span>
+                        <img src="./images/toprightarrow.svg" class="w-4 ml-4 sm:ml-8" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+         <!-- Construction Equipment -->
+        <div class="py-12 container mx-auto">
+          <div class="flex flex-col lg:flex-row gap-12 px-5 lg:px-0">
+              <div class="text-start w-full lg:w-2/3 lg:pr-28">
+                  <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Construction Equipment</h2>
+                  <h2 class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Construction Equipment for Sale and Rent 2025 Saudi Arabia</h2>
+                  <p class="mt-2 text-base md:text-xl text-black leading-relaxed">Saudi Equipment offers the best platform for buyers, sellers, investors, stakeholders, suppliers, dealers, and contractors to connect and engage in the purchase, sale, and rental of heavy equipment at competitive prices. On our platform, you can post free local classified ads for buying and selling heavy equipment across Saudi Arabia. We cover all major categories of heavy equipment from leading brands such as Caterpillar, Doosan, Komatsu, CAT, Volvo, Hitachi, John Deere, Terex, Michigan, Case, and many more.</p>
+              </div>
+              <div class="flex justify-center lg:justify-end items-center w-full lg:w-1/3">
+                  <img src="./images/Construction Equipment.png" alt="Construction Equipment" class="rounded-lg object-contain w-full max-w-96 h-auto lg:w-96 lg:h-full" />
+              </div>
+          </div>
+      </div>
+
+        <div class="py-[0.1px] container mx-auto w-full color-[#FCB034] bg-[#FCB034]"></div>
+        
+        <div class="py-12 container mx-auto pt-4 lg:pt-16">
+            <div class="flex flex-col lg:flex-row gap-12 px-5 lg:px-0">
+                <div class="flex justify-center lg:justify-end items-center w-full lg:w-1/3">
+                    <img src="./images/Construction Equipment2.png" alt="Asphalt, Aggregate, and Concrete Equipment" class="rounded-lg object-contain w-full max-w-96 h-auto lg:w-96 lg:h-full" />
+                </div>
+                <div class="text-start w-full lg:w-2/3 lg:pl-28">
+                    <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Construction Equipment</h2>
+                    <h2 class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Asphalt, Aggregate and Concrete Equipment for Sale and Rent 2025 Saudi Arabia</h2>
+                    <p class="mt-2 text-base md:text-xl text-black leading-relaxed">Our platform also allows you to post free ads for asphalt, aggregate, and concrete equipment for sale in Saudi Arabia, including concrete pump trucks, concrete mixer trucks, asphalt pavers, pneumatic roller compactors, vibrating roller compactors, cold planers, fixed smooth drum rollers, and vibrating smooth drum rollers.</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <button class="bg-[#FCB034] flex align-center items-center mx-auto w-fit text-white font-semibold py-2 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <span>View More</span>
+                    <img class="w-4 ml-3" src="./images/arrow-right.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+
+        <!-- About Us -->
+      <div class="py-12 bg-[#FFFAF3]">
+          <div class="flex flex-col lg:flex-row gap-12 px-5 lg:px-0 container mx-auto">
+              <div class="text-start w-full lg:w-2/3 lg:pr-32">
+                  <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">About Us</h2>
+                  <h2 class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">We Are Always Ensure Best Medical Treatment For Your Health</h2>
+                  <p class="mt-2 text-base md:text-xl text-black leading-relaxed">Saudi Equipment is the leading platform in Saudi Arabia for buying, selling, and renting heavy equipment. We provide a trusted and secure environment that brings together buyers, sellers, investors, suppliers, contractors, and dealers in one place. You can post local classified ads for free and find the best deals from across the Kingdom. We cover a wide range of heavy equipment categories, including excavators, trucks, cranes, loaders, and generators.</p>
+                  <div class="inline-flex align-center items-center gap-3 pl-3 pt-5">
+                      <img src="./images/iconoir_maps-arrow.svg" class="w-7" alt="map_arrows">
+                      <p class="text-base md:text-lg text-black leading-relaxed">Saudi Equipment is the leading platform in Saudi Arabia for buying, </p>
+                  </div>
+                  <div class="inline-flex align-center items-center gap-3 pl-3 pt-5">
+                      <img src="./images/iconoir_maps-arrow.svg" class="w-7" alt="map_arrows">
+                      <p class="text-base md:text-lg text-black leading-relaxed">Saudi Equipment is the leading platform in Saudi Arabia for buying, </p>
+                  </div>
+                  <div class="inline-flex align-center items-center gap-3 pl-3 pt-5">
+                      <img src="./images/iconoir_maps-arrow.svg" class="w-7" alt="map_arrows">
+                      <p class="text-base md:text-lg text-black leading-relaxed">Saudi Equipment is the leading platform in Saudi Arabia for buying, </p>
+                  </div>
+              </div>
+              <div class="flex justify-center lg:justify-end items-center w-full lg:w-1/3">
+                  <img id="about-us-image" src="./images/About Us.png" alt="About Us" class="rounded-lg object-contain w-full max-w-96 h-auto lg:w-96 lg:h-full" />
+              </div>
+          </div>
+      </div>
+
+
+        <!-- Equipment Request -->
+         <div class="py-12 container mx-auto">
+            <div class="flex flex-col lg:flex-row gap-12 px-5 lg:px-0">
+                <div class="text-start w-full lg:w-2/3 lg:pr-28">
+                    <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Equipment Request</h2>
+                    <h2 class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Heavy equipment rental prices in Saudi Arabia</h2>
+                    <p class="mt-2 text-base md:text-xl text-black leading-relaxed">Heavy equipment rental costs vary depending on the type of equipment, its size, and the rental period. Generally, daily rates range from 300 Saudi riyals to 4,000 Saudi riyals. Rates also vary depending on whether the rental is daily, weekly, or monthly.
+                        Examples of rental prices for some common equipment:</p>
+                </div>
+                <div class="flex justify-center lg:justify-end items-center w-full lg:w-1/3">
+                    <img src="./images/Equipment Request.png" alt="Equipment Request" class="rounded-lg object-contain w-full max-w-96 h-auto lg:w-96 lg:h-full" />
+                </div>
+            </div>
+        </div>
+        
+          <!--Equipment Request table -->
+        <div class="py-8 container mx-auto px-5 lg:px-0">
+            <div id="pricing-table-container" class="border border-gray-300 rounded-lg max-w-2xl mx-auto">
+                <table id="pricing-table" class="w-full text-start border-collapse">
+                    <tbody>
+                        <tr class="border-b border-gray-300">
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Forklift</td>
+                            <td class="text-sm md:text-base text-[#000000] py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Caeser Lift</td>
+                            <td class="text-sm md:text-base text-black py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Boom Truck Crane</td>
+                            <td class="text-sm md:text-base text-black py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Loader</td>
+                            <td class="text-sm md:text-base text-black py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Bobcat</td>
+                            <td class="text-sm md:text-base text-black py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                        <tr class="border-b border-gray-300">
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Bulldozer</td>
+                            <td class="text-sm md:text-base text-black py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                        <tr>
+                            <td class="text-base md:text-base font-semibold text-[#FCB034] py-2 lg:px-5 px-2 border-r border-gray-300">Truck</td>
+                            <td class="text-sm md:text-base text-black py-2 lg:pl-8 pl-5 px-2">Starting from 500 SAR per day</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <!-- Popular Brands -->
+           <div class="py-12 bg-[#FFF9F2]">
+              <div class="flex flex-col lg:flex-row gap-12 px-5 lg:px-0 container mx-auto">
+                  <div class="text-start w-full lg:w-2/3 lg:pr-28">
+                      <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Popular Brands</h2>
+                      <h2 class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Heavy Equipment Brands and Models</h2>
+                      <p class="mt-2 text-base md:text-xl text-black leading-relaxed">In Saudi Arabia, there are various brands and models of equipment, some of which are among the most in-demand and widely used on the market. We'll share a few names with you here.</p>
+                  </div>
+                  <div class="flex justify-center lg:justify-end items-center w-full lg:w-1/3">
+                      <img src="./images/popular brand.png" alt="Popular Brands" class="rounded-lg object-contain w-full max-w-96 h-auto lg:w-96 lg:h-full" />
+                  </div>
+              </div>
+              <div class="py-8 container mx-auto px-5 lg:px-0">
+                  <div id="brands-table-container" class="border border-[#636363] rounded-lg max-w-2xl mx-auto">
+                      <table id="brands-table" class="w-full text-center border-collapse">
+                          <tbody>
+                              <tr class="border-b border-[#636363]">
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-3 border-r border-[#636363]">Freightliner</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2 border-r border-[#636363]">Ford</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2 border-r border-[#636363]">International</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2">Caterpillar</td>
+                              </tr>
+                              <tr class="border-b border-[#636363]">
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-3 border-r border-[#636363]">Peterbilt</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2 border-r border-[#636363]">John Deere</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2 border-r border-[#636363]">Kenworth</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2">Volvo</td>
+                              </tr>
+                              <tr>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-3 border-r border-[#636363]">Komatsu</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2 border-r border-[#636363]">XCMG</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2 border-r border-[#636363]">Cup</td>
+                                  <td class="text-sm md:text-lg font-medium text-black py-2 px-2">Western Star</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+        
+
+        <!-- Equipment Request -->
+        <div class="py-12 container mx-auto">
+          <div class="flex flex-col lg:flex-row gap-12 px-5 lg:px-0">
+              <div class="text-start w-full lg:w-2/3 lg:pr-28">
+                  <h2 class="text-lg pt-5 lg:pt-10 md:text-xl font-semibold text-[#FCB034] tracking-wide mb-1">Equipment Request</h2>
+                  <h2 class="text-2xl md:text-3xl/normal font-bold text-black max-w-4xl">Saudi heavy equipment names</h2>
+                  <p class="mt-2 text-base md:text-xl text-black leading-relaxed">Heavy equipment rental costs vary depending on the type of equipment, its size, and the rental period. Generally, daily rates range from 300 Saudi riyals to 4,000 Saudi riyals. Rates also vary depending on whether the rental is daily, weekly, or monthly.
+                    Examples of rental prices for some common equipment:</p>
+              </div>
+              <div class="flex justify-center lg:justify-end items-center w-full lg:w-1/3">
+                  <img src="./images/Equipment Request.png" alt="Equipment Request" class="rounded-lg object-contain w-full max-w-96 h-auto lg:w-96 lg:h-full" />
+              </div>
+          </div>
+      </div>
+      <div class="py-8 container mx-auto px-5 lg:px-0">
+          <div id="equipment-table-container" class="border border-[#636363] rounded-lg max-w-2xl mx-auto">
+              <table id="equipment-table" class="w-full text-center border-collapse">
+                  <tbody>
+                      <tr class="border-b border-[#636363]">
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Sheol</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2">Digger</td>
+                      </tr>
+                      <tr class="border-b border-[#636363]">
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Sheol</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2">Digger</td>
+                      </tr>
+                      <tr class="border-b border-[#636363]">
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Sheol</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2">Digger</td>
+                      </tr>
+                      <tr class="border-b border-[#636363]">
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Sheol</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2">Digger</td>
+                      </tr>
+                      <tr class="border-b border-[#636363]">
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Sheol</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2">Digger</td>
+                      </tr>
+                      <tr>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Sheol</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2 border-r border-[#636363]">Digger</td>
+                          <td class="text-base md:text-lg font-medium text-black py-2">Digger</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+       
+
+        <!-- testimonial section -->
+       <div class="bg-white py-16">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="text-center mb-12">
+                  <h2 class="text-lg text-[#FCB034] uppercase tracking-wide mb-2">Testimonials</h2>
+                  <p class="text-3xl font-bold text-gray-800">Client Success Stories</p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <div id="testimonial-1" class="bg-[#FFFAF3] rounded-lg p-8">
+                      <div class="flex items-center">
+                          <img src="./images/testimonial_img.png" alt="Client Avatar" class="rounded-full w-12 h-12">
+                          <div class="pl-5 flex-1">
+                              <h3 class="text-base font-bold text-gray-800 mb-1">John Doe</h3>
+                              <p class="text-sm text-gray-500 mb-0">CEO, ABC Company</p>
+                          </div>
+                          <img src="./images/carbon_quotes.png" class="w-12 h-10" alt="Quote Icon">
+                      </div>
+                      <p class="text-gray-700 text-sm mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                  </div>
+
+                  <div id="testimonial-2" class="bg-[#FFFAF3] rounded-lg p-8">
+                      <div class="flex items-center">
+                          <img id="testimonial-2-avatar" src="./images/testimonial_img.png" alt="Client Avatar" class="rounded-full w-12 h-12">
+                          <div class="pl-5 flex-1">
+                              <h3 class="text-base font-bold text-gray-800 mb-1">John Doe</h3>
+                              <p class="text-sm text-gray-500 mb-0">CEO, ABC Company</p>
+                          </div>
+                          <img id="testimonial-2-quote" src="./images/carbon_quotes.png" class="w-12 h-10" alt="Quote Icon">
+                      </div>
+                      <p class="text-gray-700 text-sm mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                  </div>
+
+                  <div id="testimonial-3" class="bg-[#FFFAF3] rounded-lg p-8">
+                      <div class="flex items-center">
+                          <img id="testimonial-3-avatar" src="./images/testimonial_img.png" alt="Client Avatar" class="rounded-full w-12 h-12">
+                          <div class="pl-5 flex-1">
+                              <h3 class="text-base font-bold text-gray-800 mb-1">John Doe</h3>
+                              <p class="text-sm text-gray-500 mb-0">CEO, ABC Company</p>
+                          </div>
+                          <img id="testimonial-3-quote" src="./images/carbon_quotes.png" class="w-12 h-10" alt="Quote Icon">
+                      </div>
+                      <p class="text-gray-700 text-sm mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+        <!-- Faq section -->
+      <div class="max-w-4xl mx-auto px-4 pb-5 lg:pb-12">
+          <div class="mb-4 pb-4">
+              <h2 class="text-lg text-[#FCB034] font-bold text-center uppercase tracking-wide mb-2">FAQs</h2>
+              <h2 class="text-2xl md:text-3xl font-bold text-black max-w-4xl text-center">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="">
+              <div id="faq-1" class="accordion bg-[#FFF9E5] border-[0.5px] border-solid border-[#E2F2D5] rounded-lg mb-4" role="accordion">
+                  <button type="button"
+                      id="faq-1-toggle"
+                      class="toggle-button cursor-pointer w-full text-base py-4 px-6 text-black flex items-center focus:outline-none"
+                      aria-expanded="false">
+                      <span class="flex-1 text-md lg:text-lg font-medium text-justify">How does Lorem work?</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-black shrink-0 transition-transform duration-300">
+                          <path d="M16.59 8.59L12 13.17L7.41 8.59 6 10l6 6 6-6z" />
+                      </svg>
+                  </button>
+                  <div id="faq-1-content" class="content max-h-0 overflow-hidden transition-all duration-300 px-6 pb-0">
+                      <p id="faq-1-answer" class="text-sm text-slate-600 leading-relaxed pb-4">We are a free loan broker who will compete for you with the loan offers sent by banks. Just fill in the loan application form and we will send it to several banks. You can then compare the loan offers you receive on your own website and sign the contract!</p>
+                  </div>
+              </div>
+
+              <div id="faq-2" class="accordion bg-[#FFF9E5] border-[0.5px] border-solid border-[#E2F2D5] rounded-lg mb-4" role="accordion">
+                  <button type="button"
+                      id="faq-2-toggle"
+                      class="toggle-button cursor-pointer w-full text-base py-4 px-6 text-black flex items-center focus:outline-none"
+                      aria-expanded="false">
+                      <span class="flex-1 text-md lg:text-lg font-medium text-justify">Who can apply for the loan?</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-black shrink-0 transition-transform duration-300">
+                          <path d="M16.59 8.59L12 13.17L7.41 8.59 6 10l6 6 6-6z" />
+                      </svg>
+                  </button>
+                  <div id="faq-2-content" class="content max-h-0 overflow-hidden transition-all duration-300 px-6 pb-0">
+                      <p class="text-sm text-slate-600 leading-relaxed pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                      </p>
+                  </div>
+              </div>
+
+              <div id="faq-3" class="accordion bg-[#FFF9E5] border-[0.5px] border-solid border-[#E2F2D5] rounded-lg mb-4" role="accordion">
+                  <button type="button"
+                      id="faq-3-toggle"
+                      class="toggle-button cursor-pointer w-full text-base py-4 px-6 text-black flex items-center focus:outline-none"
+                      aria-expanded="false">
+                      <span class="flex-1 text-md lg:text-lg font-medium text-justify">How much can I apply for?</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-black shrink-0 transition-transform duration-300">
+                          <path d="M16.59 8.59L12 13.17L7.41 8.59 6 10l6 6 6-6z" />
+                      </svg>
+                  </button>
+                  <div id="faq-3-content" class="content max-h-0 overflow-hidden transition-all duration-300 px-6 pb-0">
+                      <p class="text-sm text-slate-600 leading-relaxed pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                  </div>
+              </div>
+
+              <div id="faq-4" class="accordion bg-[#FFF9E5] border-[0.5px] border-solid border-[#E2F2D5] rounded-lg mb-4" role="accordion">
+                  <button type="button"
+                      id="faq-4-toggle"
+                      class="toggle-button cursor-pointer w-full text-base py-4 px-6 text-black flex items-center focus:outline-none"
+                      aria-expanded="false">
+                      <span class="flex-1 text-md lg:text-lg font-medium text-justify">How quickly can I get a loan?</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-black shrink-0 transition-transform duration-300">
+                          <path d="M16.59 8.59L12 13.17L7.41 8.59 6 10l6 6 6-6z" />
+                      </svg>
+                  </button>
+                  <div id="faq-4-content" class="content max-h-0 overflow-hidden transition-all duration-300 px-6 pb-0">
+                      <p class="text-sm text-slate-600 leading-relaxed pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                  </div>
+              </div>
+
+              <div id="faq-5" class="accordion bg-[#FFF9E5] border-[0.5px] border-solid border-[#E2F2D5] rounded-lg mb-4" role="accordion">
+                  <button type="button"
+                      id="faq-5-toggle"
+                      class="toggle-button cursor-pointer w-full text-base py-4 px-6 text-black flex items-center focus:outline-none"
+                      aria-expanded="false">
+                      <span class="flex-1 text-md lg:text-lg font-medium text-justify">What is the repayment term of my loan?</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 fill-current text-black shrink-0 transition-transform duration-300">
+                          <path d="M16.59 8.59L12 13.17L7.41 8.59 6 10l6 6 6-6z" />
+                      </svg>
+                  </button>
+                  <div id="faq-5-content" class="content max-h-0 overflow-hidden transition-all duration-300 px-6 pb-0">
+                      <p class="text-sm text-slate-600 leading-relaxed pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+       <!-- Payment methods -->
+        <div class="bg-white py-12">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8">
+              <h2 class="text-sm font-semibold text-yellow-500 uppercase tracking-wide mb-2">Payment Methods</h2>
+              <p class="text-2xl font-bold text-gray-800">Easy Payment section</p>
+            </div>
+
+                <div class="flex justify-center items-center">
+                    <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-6 w-fit">
+                      <div class="bg-[#FFFAF3] rounded-md py-3 flex items-center justify-center">
+                        <img src="./images/cash.png" alt="Cash" class="max-h-10 max-w-full object-contain"><span class="text-[#FCB034] text-lg lg:text-xl font-bold ml-1 lg:ml-3 pt-2">Cash</span>
+                      </div>
+                      <div class="bg-[#FFFAF3] rounded-md py-3 flex items-center justify-center">
+                        <img src="./images/apple-pay.png" alt="Apple Pay" class="max-h-10 max-w-full object-contain">
+                      </div>
+                      <div class="bg-[#FDEACE] rounded-md py-3 flex items-center justify-center">
+                        <img src="./images/mastercard.png" alt="Mastercard" class="max-h-10 max-w-full object-contain">
+                      </div>
+                      <div class="bg-[#D4DEF7] rounded-md py-3 flex items-center justify-center">
+                        <img src="./images/american express.png" alt="American Express" class="max-h-10 max-w-full object-contain">
+                      </div>
+                      <div class="bg-[#CCDEFF] rounded-md p-3 flex items-center justify-center">
+                        <img src="./images/paypal.png" alt="PayPal" class="max-h-10 max-w-full object-contain">
+                      </div>
+                      <div class="bg-[#FFF7CC] rounded-md py-3 flex items-center justify-center">
+                        <img src="./images/wester union.png" alt="Western Union" class="max-h-10 max-w-full object-contain">
+                      </div>
+                      <div class="bg-[#FFFAF3] rounded-md py-3 flex items-center justify-center">
+                        <img src="./images/mada.png" alt="mada" class="max-h-10 max-w-full object-contain">
+                      </div>
+                      <div class="hidden lg:block"></div>
+                      <!-- Second row centered -->
+                      <div class="col-span-4 md:col-span-6 lg:col-span-8 flex justify-center gap-4 md:gap-6">
+                        <div class=" rounded-md py-3 flex items-center justify-center">
+                          <img src="./images/snb.png" alt="Saudi National Bank" class="max-h-16 max-w-full object-contain">
+                        </div>
+                        <div class=" rounded-md flex items-center justify-center">
+                          <img src="./images/alrajhi bank.png" alt="alrajhi bank" class="max-h-16 max-w-full object-contain">
+                        </div>
+                        <div class=" rounded-md flex items-center justify-center">
+                          <img src="./images/riyad bank.png" alt="Riyad Bank" class="max-h-16 max-w-full object-contain">
+                        </div>
+                        <div class="rounded-md flex items-center justify-center">
+                          <img src="./images/albilad bank.png" alt="Bank Albilad" class="max-h-16 max-w-full object-contain">
+                        </div>
+                        <div class="bg-[#D8E3F3] rounded-md  flex items-center justify-center">
+                          <img src="./images/visa.png" alt="VISA" class="max-h-10 max-w-full object-contain">
+                        </div>
+                      </div>
+                      <!-- Remove unused placeholders -->
+                    </div>
+                </div>
+          </div>
+        </div>
+
+      <!-- Equipment Images slider -->
+       <div class="pt-2 lg:pb-16 pb-8 language-sensitive">
+          <div class="mb-4 pb-4 lg:pb-8">
+            <h2 class="text-lg text-[#FCB034] font-bold text-center uppercase tracking-wide mb-2">Images</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-black text-center">Equipment Images</h2>
+          </div>
+
+            <div class="swiper mySwiper lg:w-[85%]">
+                <div class="swiper-wrapper">
+                      <div class="swiper-slide ">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <!-- <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="rounded-xl" src="./images/Slide Image.png" alt="">
+                      </div> -->          
+                        
+                </div>     
+                  <div class="swiper-pagination"></div>         
+          </div>         
+        </div>
+        <div class="lg:mb-10 mb-5 text-center">
+          <button class="bg-[#FCB034] flex align-center items-center mx-auto w-fit text-white font-semibold py-2 px-5 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+              <span>View More</span>
+              <img class="w-4 ml-3" src="./images/arrow-right.svg" alt="">
+          </button>
+      </div>
+         
+
+
+          <!-- footer Placeholder -->
+         <footer class="tracking-wide bg-[#FEECCE] px-4 sm:px-6 md:px-10 pt-12 pb-6">
+            <div class="flex container mx-auto flex-wrap justify-between gap-6 sm:gap-10">
+                <div class="max-w-md w-full sm:w-auto">
+                    <h1 class="text-[#FCB034] text-lg sm:text-xl md:text-3xl font-bold">Our Socials</h1>
+                    <div class="w-full h-auto flex gap-2 pt-3 flex-wrap">
+                        <img class="w-6" src="./images/insta.svg" alt="Instagram">
+                        <img class="w-7" src="./images/whatsapp.svg" alt="WhatsApp">
+                        <img class="w-6" src="./images/facebook.svg" alt="Facebook">
+                        <img class="w-6" src="./images/twitter.svg" alt="Twitter">
+                        <img class="w-6" src="./images/linkdin.svg" alt="LinkedIn">
+                    </div>
+                        
+                    <div class="mt-8">
+                        <h1 class="text-[#FCB034] text-lg sm:text-xl md:text-3xl font-bold">Email</h1>
+                        <p class="text-[#000000] text-sm lg:text-lg">info@saudi-equipment.com</p>
+                    </div>               
+                                
+                    <div class="mt-8">
+                        <h1 class="text-[#FCB034] text-lg sm:text-xl md:text-3xl font-bold">Download App</h1>
+                    <div class="mt-4 flex flex-wrap gap-3 sm:gap-4 justify-start">
+            <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
+                <img src="./images/appleicon.png" alt="Apple icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
+                <div class="text-left">
+                    <p class="text-[10px] sm:text-xs uppercase">Download on</p>
+                    <p class="text-xs sm:text-sm font-bold leading-tight">App Store</p>
+                </div>
+            </button>
+            
+            <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
+                <img src="./images/playstoreicon.png" alt="Google Play icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
+                <div class="text-left">
+                    <p class="text-[10px] sm:text-xs uppercase">Get it on</p>
+                    <p class="text-xs sm:text-sm font-bold leading-tight">Google Play</p>
+                </div>
+            </button>
+            
+            <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
+                <img src="./images/Vector.png" alt="App Gallery icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
+                <div class="text-left">
+                    <p class="text-[10px] sm:text-xs uppercase">Download on</p>
+                    <p class="text-xs sm:text-sm font-bold leading-tight">App Gallery</p>
+                </div>
+            </button>
+        </div>
+                    </div>
+                </div>
+
+                <div class="max-lg:min-w-[140px] w-full sm:w-auto">
+                    <h4 class="text-[#FCB034] font-bold text-lg sm:text-xl lg:text-2xl relative max-sm:cursor-pointer">City List</h4>
+                    <ul class="mt-6 space-y-4 list-disc pl-5 opacity-75">
+                        <li><a href='javascript:void(0)' class="hover:text-black text-[#000000] text-sm lg:text-lg font-semibold">Riyadh</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Jeddah</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Dammam</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">NEOM</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Makkah</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Madina</a></li>
+                    </ul>
+                    <button href='javascript:void(0)' class="text-[#FCB034] pt-5 text-sm lg:text-lg italic underline font-semibold">View All</button>
+                </div>
+
+                <div class="max-lg:min-w-[140px] w-full sm:w-auto">
+                    <h4 class="text-[#FCB034] font-bold text-lg sm:text-xl lg:text-2xl relative max-sm:cursor-pointer">Equipment List</h4>
+                    <ul class="mt-6 space-y-4 list-disc pl-5 opacity-75">
+                        <li><a href='javascript:void(0)' class="hover:text-black text-[#000000] text-sm lg:text-lg font-semibold">Forklift</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Generator</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Excavator</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Wheel Loader</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Grader</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Dump Truck</a></li>
+                    </ul>
+                    <button href='javascript:void(0)' class="text-[#FCB034] pt-5 text-sm lg:text-lg italic underline font-semibold">View All</button>
+                </div>
+
+                <div class="max-lg:min-w-[140px] w-full sm:w-auto">
+                    <h4 class="text-[#FCB034] font-bold text-lg sm:text-xl lg:text-2xl relative max-sm:cursor-pointer">Equipment List</h4>
+                    <ul class="mt-6 space-y-4 list-disc pl-5 opacity-75">
+                        <li><a href='javascript:void(0)' class="hover:text-black text-[#000000] text-sm lg:text-lg font-semibold">About Us</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Contact Us</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">FAQs</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Help Center</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Terms & Conditions</a></li>
+                        <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="mt-10 mb-6 border-[#FFC15C]" />
+
+            <div class="flex justify-center items-center py-1">
+                <div class="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-5">
+                    <img id="footer-payment-apple-pay" src="./images/apple-pay.png" data-key="Footer_Payment_Apple_Pay_Alt" alt="Apple Pay" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
+                    <img id="footer-payment-mastercard" src="./images/mastercard.png" data-key="Footer_Payment_Mastercard_Alt" alt="Mastercard" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
+                    <img id="footer-payment-visa" src="./images/visa.png" data-key="Footer_Payment_Visa_Alt" alt="Visa" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
+                    <img id="footer-payment-snb" src="./images/snb-footer.png" data-key="Footer_Payment_SNB_Alt" alt="SNB" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
+                    <img id="footer-payment-mada" src="./images/mada-footer.png" data-key="Footer_Payment_Mada_Alt" alt="Mada" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+<script src="./js/scripts.js"></script>
+
+    <script>     
+
+        function toggleLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index_en.html';
+            } else if (lang === 'ar') {
+                window.location.href = 'index_ar.html';
+            }
+        }
+
+        function shuffleSlides(wrapper) {
+        const slides = Array.from(wrapper.children);
+        for (let i = slides.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [slides[i], slides[j]] = [slides[j], slides[i]]; // Swap elements
+        }
+        // Re-append shuffled slides to the wrapper
+        slides.forEach(slide => wrapper.appendChild(slide));
+        }
+
+        // Shuffle slides for each slider before initialization
+        document.querySelectorAll('.swiper-wrapper').forEach(wrapper => {
+        shuffleSlides(wrapper);
+        });
+
+
+        function initializeSwipers(lang) {
+    const isRTL = lang === 'ar';
+
+    new Swiper('.categories-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: isRTL ? '.swiper-button-prev-categories' : '.swiper-button-next-categories',
+            prevEl: isRTL ? '.swiper-button-next-categories' : '.swiper-button-prev-categories',
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1028: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            990: {
+                slidesPerView: 4,
+                spaceBetween: 0,
+                centeredSlides: false,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: false,
+            },
+        },
+    });
+
+      // Cities Slider
+    new Swiper('.cities-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+             nextEl: isRTL ? '.swiper-button-prev-cities' : '.swiper-button-next-cities',
+            prevEl: isRTL ? '.swiper-button-next-cities' : '.swiper-button-prev-cities',
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            1028: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            990: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
+             768: { // Start desktop-like layout at iPad portrait width
+                slidesPerView: 2,
+                spaceBetween: 10,
+                centeredSlides: false, // Ensure no centering for desktop-like layout
+            },
+        },
+    });
+
+     // Equipment Sale Slider
+    new Swiper('.equipment-sale-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+             nextEl: isRTL ? '.swiper-button-prev-equipment-sale' : '.swiper-button-next-equipment-sale',
+            prevEl: isRTL ? '.swiper-button-next-equipment-sale' : '.swiper-button-prev-equipment-sale',
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1028: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            990: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+               768: { // Start desktop-like layout at iPad portrait width
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: false, // Ensure no centering for desktop-like layout
+            },
+        },
+    });
+
+
+    // Equipment Rental Slider
+   new Swiper('.equipment-rental-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+             nextEl: isRTL ? '.swiper-button-prev-equipment-rental' : '.swiper-button-next-equipment-rental',
+            prevEl: isRTL ? '.swiper-button-next-equipment-rental' : '.swiper-button-prev-equipment-rental',
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1028: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            990: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+               768: { // Start desktop-like layout at iPad portrait width
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: false, // Ensure no centering for desktop-like layout
+            },
+        },
+    });
+
+     // Equipment Request Slider
+    new Swiper('.equipment-request-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+             nextEl: isRTL ? '.swiper-button-prev-equipment-request' : '.swiper-button-next-equipment-request',
+            prevEl: isRTL ? '.swiper-button-next-equipment-request' : '.swiper-button-prev-equipment-request',
+        },
+        breakpoints: {
+            1920: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1028: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            990: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+               768: { // Start desktop-like layout at iPad portrait width
+                slidesPerView: 3,
+                spaceBetween: 10,
+                centeredSlides: false, // Ensure no centering for desktop-like layout
+            },
+        },
+    });
+
+}
+
+      var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 2,
+        stretch: 0,
+        depth: 400,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+
+      //  var swiper = new Swiper(".multiple-slide-carousel", {
+      //   loop: true,
+      //   slidesPerView: 2,
+      //   spaceBetween: 20,
+      //   //   autoplay: {
+      //   //     delay: 3000, // Slide changes every 3 seconds
+      //   //     disableOnInteraction: false, // Continue autoplay after user interaction
+      //   //   },
+      //   navigation: {
+      //       nextEl: ".swiper-button-next",
+      //       prevEl: ".swiper-button-prev",
+      //   },
+      //   breakpoints: {
+      //       1920: {
+      //       slidesPerView: 5,
+      //       spaceBetween: 10,
+      //       },
+      //       1028: {
+      //       slidesPerView: 5,
+      //       spaceBetween: 10,
+      //       },
+      //       990: {
+      //       slidesPerView: 1,
+      //       spaceBetween: 0,
+      //       },
+      //   },
+      //   });
+        document.addEventListener('DOMContentLoaded', function() {
+        // Determine current language based on the page
+        const currentPage = window.location.pathname;
+        const currentLang = currentPage.includes('index_en.html') ? 'en' : 'ar';
+        
+        // Initialize sliders with the current language
+        initializeSwipers(currentLang);
+    });
+     
+       document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.accordion').forEach((elm) => {
+    const button = elm.querySelector('.toggle-button');
+    const content = elm.querySelector('.content');
+    const icon = button.querySelector('svg');
+
+    button.addEventListener('click', () => {
+      const isOpen = content.style.maxHeight !== '0px';
+
+      if (isOpen) {
+        content.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+        button.setAttribute('aria-expanded', 'false');
+        elm.classList.remove('bg-[#FFF9E5]');
+        elm.classList.add('bg-[#FFF9E5]');
+      } else {
+        // Close all other accordions
+        document.querySelectorAll('.accordion').forEach(otherElm => {
+          const otherContent = otherElm.querySelector('.content');
+          const otherIcon = otherElm.querySelector('.toggle-button svg');
+          const otherButton = otherElm.querySelector('.toggle-button');
+          otherContent.style.maxHeight = '0px';
+          otherIcon.style.transform = 'rotate(0deg)';
+          otherButton.setAttribute('aria-expanded', 'false');
+          otherElm.classList.remove('bg-[#FFF9E5]');
+          otherElm.classList.add('bg-[#FFF9E5]');
+        });
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
+        button.setAttribute('aria-expanded', 'true');
+        elm.classList.remove('bg-[#FFF9E5]');
+        elm.classList.add('bg-[#FFF9E5]');
+      }
+    });
+  });
+  
+});
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const closeButton = document.getElementById('close-popup');
+        const popup = document.getElementById('download-app-popup');
+
+        // Prevent touch event conflicts
+        if (popup) {
+            popup.addEventListener('touchstart', (event) => {
+            event.stopPropagation();
+            });
+        }
+
+        // Close button event listeners
+        if (closeButton) {
+            const hidePopup = (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            console.log('Close button triggered');
+            hideDownloadAppPopup();
+            };
+            closeButton.addEventListener('click', hidePopup);
+            closeButton.addEventListener('touchstart', hidePopup);
+        }
+
+        // Show popup on page load for mobile
+        if (window.innerWidth < 768) {
+            showDownloadAppPopup();
+        }
+        });
+
+        function showDownloadAppPopup() {
+        const popup = document.getElementById('download-app-popup');
+        if (popup) {
+            popup.classList.remove('hidden');
+            popup.style.display = 'flex';
+        }
+        }
+
+        function hideDownloadAppPopup() {
+        const popup = document.getElementById('download-app-popup');
+        if (popup) {
+            popup.classList.add('hidden');
+            popup.style.display = 'none';
+        }
+        }
+
+
+    </script>
+</body>
+</html>

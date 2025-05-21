@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "janna_lt_regular";
+  src: url("../fonts/janna_lt_regular.ttf") format("truetype");
+  /* font-weight: bold; */
+  font-style: normal;
+  font-display: swap;
+}
+
+.bg-shadow {
+  background-color: #fffaf3;
+}
+html[lang="ar"] {
+  font-family: "janna_lt_regular", serif;
+  direction: rtl;
+}
+html[lang="en"] {
+  font-family: "Poppins", sans-serif;
+  direction: ltr;
+}
+
+.active-language {
+  font-weight: 500;
+  cursor: default;
+}
+.language-btn {
+  transition: all 0.2s ease;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  /* padding-bottom: 64px !important; */
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+  /* width: 110px !important; */
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+/* .swiper-slide{
+
+        } */
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "next";
+  display: none;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  display: none;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transform-origin: center;
+}
+
+/* Custom styles for Heavy Equipment Sale section */
+.hero-equipment-section {
+  background-color: #fffaf3;
+  position: relative;
+  overflow: hidden;
+}
+.hero-equipment-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/construction_sketch.jpg") no-repeat center center; /* Replace with actual sketch image path if available */
+  background-size: cover;
+  opacity: 0.1; /* Subtle overlay effect */
+  z-index: 0;
+}
+.hero-equipment-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-equipment-content {
+    flex-direction: column;
+  }
+  .hero-equipment-content > div {
+    width: 100% !important;
+  }
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, transparent , #0002 , #0004); */
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet {
+  background: #4e4e4e;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: #fcb034;
+  opacity: 1;
+}
+
+@media (max-width: 350px) {
+  td {
+    word-break: break-word; /* Break long words to prevent overflow */
+    hyphens: auto; /* Add hyphenation for long words */
+  }
+
+  .swiper-button-prev-categories,
+  .swiper-button-next-categories {
+    top: 70% !important; /* Move arrows further down (from 66.67% to 80%) */
+  }
+
+  .swiper-button-prev-cities,
+  .swiper-button-next-cities {
+    top: 72% !important;
+  }
+
+  .swiper-button-prev-equipment-sale,
+  .swiper-button-next-equipment-sale {
+    top: 83.5% !important;
+  }
+
+  .swiper-button-prev-equipment-rental,
+  .swiper-button-next-equipment-rental {
+    top: 83.7% !important;
+  }
+}
+
+/* Style for disabled navigation buttons */
+.swiper-button-disabled {
+  opacity: 0.5; /* Reduce opacity to indicate disabled state */
+  cursor: not-allowed; /* Change cursor to show it's not clickable */
+  pointer-events: none; /* Prevent interaction when disabled */
+}
+
+/* Ensure the transition applies to opacity for smooth effect */
+.swiper-button-prev-categories,
+.swiper-button-next-categories {
+  transition: opacity 0.3s ease;
+}

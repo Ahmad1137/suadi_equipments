@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <script type="application/ld+json">
+  {         
+    "@context": "https://schema.org/",         
+    "@type": "Organization",         
+    "@id": "#Organization",         
+    "url": "https://www.saudi-equipment.com/",         
+    "legalName": "Saudi Equipment",         
+    "name": "سوق معدات السعودية",         
+    "description": "Heavy Equipment Rental, Sale in Saudi Arabia, Jeddah, Riyadh",         
+    "image": "https://www.saudi-equipment.com/images/forklift-rental-saudi-jeddah-riyadh.png",         
+    "logo": "https://www.saudi-equipment.com/images/saudi-equipment-website-logo.png",         
+    "telephone": "920002332",         
+    "email": "info@saudi-equipment.com",         
+    "sameAs": [             
+      "https://www.facebook.com/people/Saudi-Equipment-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D9%85%D8%B9%D8%AF%D8%A7%D8%AA/100064623434321/#",           
+      "https://x.com/saudi_equipment"       
+    ] 
+  }
+  </script>
+  <title>سوق معدات ثقيلة السعودية 2025 | تاجير معدات وبيع وشراء بجودة عالية</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  
+<style>
+        .active-language {
+            color: #FCB034 !important;
+        }
+    </style>
+<script>
+function toggleLanguage(lang) {
+    if (lang === 'en') {
+        window.location.href = 'index_en.html';
+    } else if (lang === 'ar') {
+        window.location.href = 'index_ar.html';
+    }
+}
+
+// Initialize Swiper sliders
+function initializeSwipers(lang) {
+    const isRTL = lang === 'ar';
+
+    // Categories Slider
+    new Swiper('.categories-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: isRTL ? '.swiper-button-prev-categories' : '.swiper-button-next-categories',
+            prevEl: isRTL ? '.swiper-button-next-categories' : '.swiper-button-prev-categories',
+        },
+        breakpoints: {
+            1920: { slidesPerView: 5, spaceBetween: 10 },
+            1028: { slidesPerView: 5, spaceBetween: 10 },
+            990: { slidesPerView: 4, spaceBetween: 0 },
+            768: { slidesPerView: 3, spaceBetween: 10 }
+        }
+    });
+
+    // Cities Slider
+    new Swiper('.cities-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: isRTL ? '.swiper-button-prev-cities' : '.swiper-button-next-cities',
+            prevEl: isRTL ? '.swiper-button-next-cities' : '.swiper-button-prev-cities',
+        },
+        breakpoints: {
+            1920: { slidesPerView: 3, spaceBetween: 10 },
+            1028: { slidesPerView: 3, spaceBetween: 10 },
+            990: { slidesPerView: 2, spaceBetween: 0 },
+            768: { slidesPerView: 2, spaceBetween: 10 }
+        }
+    });
+
+    // Equipment Sale Slider
+    new Swiper('.equipment-sale-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: isRTL ? '.swiper-button-prev-equipment-sale' : '.swiper-button-next-equipment-sale',
+            prevEl: isRTL ? '.swiper-button-next-equipment-sale' : '.swiper-button-prev-equipment-sale',
+        },
+        breakpoints: {
+            1920: { slidesPerView: 5, spaceBetween: 10 },
+            1028: { slidesPerView: 5, spaceBetween: 10 },
+            990: { slidesPerView: 3, spaceBetween: 0 },
+            768: { slidesPerView: 3, spaceBetween: 10 }
+        }
+    });
+
+    // Equipment Rental Slider
+    new Swiper('.equipment-rental-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: isRTL ? '.swiper-button-prev-equipment-rental' : '.swiper-button-next-equipment-rental',
+            prevEl: isRTL ? '.swiper-button-next-equipment-rental' : '.swiper-button-prev-equipment-rental',
+        },
+        breakpoints: {
+            1920: { slidesPerView: 5, spaceBetween: 10 },
+            1028: { slidesPerView: 5, spaceBetween: 10 },
+            990: { slidesPerView: 3, spaceBetween: 0 },
+            768: { slidesPerView: 3, spaceBetween: 10 }
+        }
+    });
+
+    // Equipment Request Slider
+    new Swiper('.equipment-request-slider', {
+        loop: false,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: isRTL ? '.swiper-button-prev-equipment-request' : '.swiper-button-next-equipment-request',
+            prevEl: isRTL ? '.swiper-button-next-equipment-request' : '.swiper-button-prev-equipment-request',
+        },
+        breakpoints: {
+            1920: { slidesPerView: 5, spaceBetween: 10 },
+            1028: { slidesPerView: 5, spaceBetween: 10 },
+            990: { slidesPerView: 3, spaceBetween: 0 },
+            768: { slidesPerView: 3, spaceBetween: 10 }
+        }
+    });
+
+    // Main Swiper
+    new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 2,
+            stretch: 0,
+            depth: 400,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+}
+
+// Initialize sliders when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Determine current language based on the page
+    const currentPage = window.location.pathname;
+    const currentLang = currentPage.includes('index_en.html') ? 'en' : 'ar';
+    
+    // Initialize sliders with the current language
+    initializeSwipers(currentLang);
+});
+</script>
+</head>
+
+<body>
+    <nav class="bg-[#FFFAF3] text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-xl font-bold">
+          <img src="./images/logo-removebg-preview.png" class="w-24 max-[350px]:w-16" alt="Construction Saudi Logo">
+        </a>
+        <ul class="flex flex-col items-end space-y-2" dir="ltr">
+       
+          <div class="relative flex px-3 py-1 border-solid border-2 items-center pt-1 border-black max-[350px]:px-2 max-[350px]:py-0.5">
+  <span>
+    <img class="w-7 max-[350px]:w-5" src="./images/tabler_language.svg" alt="Language Icon">
+  </span>
+  <button 
+    class="language-btn px-1 text-sm rounded-md transition-colors duration-200 text-gray-700 max-[350px]:text-xs" 
+    data-lang="en" 
+    onclick="toggleLanguage('en')"
+  >
+    English
+  </button>
+  <span class="text-gray-700">/</span>
+  <button 
+    class="language-btn px-1 text-sm rounded-md transition-colors duration-200 text-gray-700 max-[350px]:text-xs" 
+    data-lang="ar" 
+    onclick="toggleLanguage('ar')"
+  >
+    العربية
+  </button>
+</div>
+          
+          <div class="flex space-x-2 md:space-x-4">
+            <button class="px-3 py-3 bg-[#565F5B] text-white rounded-md text-xs font-medium md:px-4 md:py-2 md:text-base max-[350px]:px-2 max-[350px]:py-2 max-[350px]:text-[10px]">
+              Sign In / Sign Up
+            </button>
+            <button class="px-3 py-3 bg-[#FCB034] text-white rounded-md text-xs font-medium md:px-4 md:py-2 md:text-base max-[350px]:px-2 max-[350px]:py-2 max-[350px]:text-[10px]">
+              Post a free Ad
+            </button>
+          </div>
+        </ul>
+      </div>
+    </nav>
+</body>
+</html>
