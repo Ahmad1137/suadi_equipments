@@ -53,6 +53,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/product.css" />
   </head>
@@ -1797,107 +1798,15 @@
     </section>
 
     <!-- Include Footer -->
-    <footer class="tracking-wide lg:mt-16 mt-8 bg-[#FEECCE] px-4 sm:px-6 md:px-10 pt-12 pb-6">
-      <div class="flex container mx-auto flex-wrap justify-between gap-6 sm:gap-10">
-          <div class="max-w-md w-full sm:w-auto">
-              <h1 class="text-[#FCB034] text-lg sm:text-xl md:text-3xl font-bold">Our Socials</h1>
-              <div class="w-full h-auto flex gap-2 pt-3 flex-wrap">
-                  <img class="w-6" src="./images/insta.svg" alt="Instagram">
-                  <img class="w-7" src="./images/whatsapp.svg" alt="WhatsApp">
-                  <img class="w-6" src="./images/facebook.svg" alt="Facebook">
-                  <img class="w-6" src="./images/twitter.svg" alt="Twitter">
-                  <img class="w-6" src="./images/linkdin.svg" alt="LinkedIn">
-              </div>
-                  
-              <div class="mt-8">
-                  <h1 class="text-[#FCB034] text-lg sm:text-xl md:text-3xl font-bold">Email</h1>
-                  <p class="text-[#000000] text-sm lg:text-lg">info@saudi-equipment.com</p>
-              </div>               
-                          
-              <div class="mt-8">
-                  <h1 class="text-[#FCB034] text-lg sm:text-xl md:text-3xl font-bold">Download App</h1>
-              <div class="mt-4 flex flex-wrap gap-3 sm:gap-4 justify-start">
-      <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
-          <img src="./images/appleicon.png" alt="Apple icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
-          <div class="text-left">
-              <p class="text-[10px] sm:text-xs uppercase">Download on</p>
-              <p class="text-xs sm:text-sm font-bold leading-tight">App Store</p>
-          </div>
-      </button>
-      
-      <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
-          <img src="./images/playstoreicon.png" alt="Google Play icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
-          <div class="text-left">
-              <p class="text-[10px] sm:text-xs uppercase">Get it on</p>
-              <p class="text-xs sm:text-sm font-bold leading-tight">Google Play</p>
-          </div>
-      </button>
-      
-      <button class="bg-black text-white rounded-lg px-3 py-2 flex items-center w-[180px] sm:min-w-[185px] hover:bg-gray-800 transition" dir="ltr">
-          <img src="./images/Vector.png" alt="App Gallery icon" class="h-6 sm:h-8 mr-2 sm:mr-3">
-          <div class="text-left">
-              <p class="text-[10px] sm:text-xs uppercase">Download on</p>
-              <p class="text-xs sm:text-sm font-bold leading-tight">App Gallery</p>
-          </div>
-      </button>
-  </div>
-              </div>
-          </div>
-
-          <div class="max-lg:min-w-[140px] w-full sm:w-auto">
-              <h4 class="text-[#FCB034] font-bold text-lg sm:text-xl lg:text-2xl relative max-sm:cursor-pointer">City List</h4>
-              <ul class="mt-6 space-y-4 list-disc pl-5 opacity-75">
-                  <li><a href='javascript:void(0)' class="hover:text-black text-[#000000] text-sm lg:text-lg font-semibold">Riyadh</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Jeddah</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Dammam</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">NEOM</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Makkah</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Madina</a></li>
-              </ul>
-              <button href='javascript:void(0)' class="text-[#FCB034] pt-5 text-sm lg:text-lg italic underline font-semibold">View All</button>
-          </div>
-
-          <div class="max-lg:min-w-[140px] w-full sm:w-auto">
-              <h4 class="text-[#FCB034] font-bold text-lg sm:text-xl lg:text-2xl relative max-sm:cursor-pointer">Equipment List</h4>
-              <ul class="mt-6 space-y-4 list-disc pl-5 opacity-75">
-                  <li><a href='javascript:void(0)' class="hover:text-black text-[#000000] text-sm lg:text-lg font-semibold">Forklift</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Generator</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Excavator</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Wheel Loader</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Grader</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Dump Truck</a></li>
-              </ul>
-              <button href='javascript:void(0)' class="text-[#FCB034] pt-5 text-sm lg:text-lg italic underline font-semibold">View All</button>
-          </div>
-
-          <div class="max-lg:min-w-[140px] w-full sm:w-auto">
-              <h4 class="text-[#FCB034] font-bold text-lg sm:text-xl lg:text-2xl relative max-sm:cursor-pointer">Equipment List</h4>
-              <ul class="mt-6 space-y-4 list-disc pl-5 opacity-75">
-                  <li><a href='javascript:void(0)' class="hover:text-black text-[#000000] text-sm lg:text-lg font-semibold">About Us</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Contact Us</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">FAQs</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Help Center</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Terms & Conditions</a></li>
-                  <li><a href='javascript:void(0)' class="hover:text-[#000000] text-[#000000] text-sm lg:text-lg font-semibold">Privacy Policy</a></li>
-              </ul>
-          </div>
-      </div>
-
-      <hr class="mt-10 mb-6 border-[#FFC15C]" />
-
-      <div class="flex justify-center items-center py-1">
-          <div class="flex flex-wrap justify-center gap-3 sm:gap-4 lg:gap-5">
-              <img id="footer-payment-apple-pay" src="./images/apple-pay.png" data-key="Footer_Payment_Apple_Pay_Alt" alt="Apple Pay" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
-              <img id="footer-payment-mastercard" src="./images/mastercard.png" data-key="Footer_Payment_Mastercard_Alt" alt="Mastercard" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
-              <img id="footer-payment-visa" src="./images/visa.png" data-key="Footer_Payment_Visa_Alt" alt="Visa" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
-              <img id="footer-payment-snb" src="./images/snb-footer.png" data-key="Footer_Payment_SNB_Alt" alt="SNB" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
-              <img id="footer-payment-mada" src="./images/mada-footer.png" data-key="Footer_Payment_Mada_Alt" alt="Mada" class="h-6 sm:h-8 lg:h-9 w-16 sm:w-18 lg:w-20 object-contain">
-          </div>
-      </div>
-  </footer>
+     <div id="footer"></div>
 
   </body>
-
+   <script>
+    $(document).ready(function () {
+      console.log("jquery is working");
+      $("#footer").load("footer_en.html");
+    });
+  </script>
   <script src="./js/scripts.js"></script>
 
   <script>   
